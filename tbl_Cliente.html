@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Queen</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Estilos para el header */
+    header {
+        background-color: #f2f2f2;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Estilos generales del cuerpo */
+    body {
+        height: 850px;
+        font-family: 'Open Sans';
+        position: relative;
+        /* para que el footer quede abajo */
+        min-height: 100vh;
+        /* para que el footer quede abajo */
+    }
+
+    /* Estilos para el menu principal */
+    nav {
+        height: 82px;
+        padding-bottom: 4%;
+        background-color: #691616;
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff6f6;
+        margin: 10px 30px;
+        padding: 5px 20px;
+        border-radius: 30px;
+    }
+
+    nav a:hover {
+        zoom: 1;
+        transition: 1s;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    /* Estilos para el menu secundario */
+    .navbar2 {
+        height: 30px;
+        padding-bottom: 3%;
+        background-color: rgba(223, 220, 220, 0.966);
+    }
+
+    .navbar2 a {
+        display: inline-block;
+        font-size: 14px;
+        text-decoration: none;
+        color: #691616;
+        margin: 10px 30px;
+        padding: 1px;
+        position: relative;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    .navbar2 a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #691616;
+        transition: width 0.3s;
+    }
+
+    .navbar2 a:hover::before {
+        width: 100%;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .log-titulo {
+        font-size: 30px;
+    }
+
+    .titulo {
+        font-family: American Typewriter (serif);
+    }
+
+    .position {
+        position: absolute;
+        top: 143%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*SECCION*/
+    .contenedor-tbl{
+        width: 1200px;
+        height: 450px;
+        position: absolute;
+        top: 50%;
+        margin-bottom: 300px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 20 px #000;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family: sans-serif;
+        background-color: #691616fa;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+    }
+    .titulo-tbl{
+        color: #ffffff;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-align: center;
+    }
+    .imagen-zoom {
+        width: 900px; /* Ancho de la imagen */
+        height: 360px;
+        transition: transform 0.3s; /* Transicion para efecto de zoom */
+    }
+
+        /* Estilo para aplicar el zoom en hover */
+    .imagen-zoom:hover {
+        transform: scale(1.1); 
+        cursor: pointer; /* Cambia el cursor a una mano para indicar interaccion */
+        }
+    /* Estilos para el footer */
+    footer {
+        background-color: #691616;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .container-foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <header>
+        <!--PRIMER BARRA DE NAVEGACION-->
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <a href="#" class="log-titulo">Sweet Queen</a>
+            <a href="index.html">Inicio</a>
+            <a href="mision.html">Misión</a>
+            <a href="vision.html">Visión</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="webmaster.html">Web Master</a>
+        </nav>
+        <!--SEGUNDA BARRA DE NAVEGACION-->
+        <nav class="navbar2">
+            <a href="tbl_Sucursal.html">Tbl. Sucursal</a>
+            <a href="form_Sucursal.html">Form. Sucursal</a>
+            <a href="tbl_Empleado.html">Tbl. Empleado</a>
+            <a href="form_Empleado.html">Form. Empleado</a>
+            <a href="tbl_Cliente.html">Tbl. Cliente</a>
+            <a href="form_Cliente.html">Form. Cliente</a>
+            <a href="tbl_Pedido.html">Tbl. Pedido</a>
+            <a href="form_Pedido.html">Form. Pedido</a>
+            <a href="tbl_Apartado.html">Tbl. Apartado</a>
+            <a href="form_Apartado.html">F. Apartado</a>
+        </nav>
+       </header> 
+       <section>
+            <!--  TABLA -->
+          
+            <div class="contenedor-tbl">
+                <h4 class="titulo-tbl">TABLA CLIENTE</h4>
+                <img class="imagen-zoom" src="img/tbl_cliente.png">
+            </div>
+            
+            <!--Fin TABLA-->
+        </section>
+    <footer>
+        <div class="container-foot">
+            <nav>
+                <p>&copy; 2023 Sweet Queen. Todos los derechos reservados.</p>
+                <a href="#">656-175-46-76</a>
+                <a href="#">Molina Villela Reyna Leticia 5-I</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

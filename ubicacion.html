@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Queen</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Estilos para el header */
+    header {
+        background-color: #f2f2f2;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+
+    /* Estilos generales del cuerpo */
+    body {
+        font-family: 'Open Sans';
+        position: relative;
+        /* Añadido para que el footer quede abajo */
+        min-height: 100vh;
+        /* Añadido para que el footer quede abajo */
+    }
+
+    /* Estilos para el menú principal */
+    nav {
+        height: 82px;
+        padding-bottom: 4%;
+        background-color: #691616;
+    }
+
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff6f6;
+        margin: 10px 30px;
+        padding: 5px 20px;
+        border-radius: 30px;
+    }
+
+    nav a:hover {
+        zoom: 1;
+        transition: 1s;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    /* Estilos para el menú secundario */
+    .navbar2 {
+        height: 30px;
+        padding-bottom: 3%;
+        background-color: rgba(223, 220, 220, 0.966);
+    }
+
+    .navbar2 a {
+        display: inline-block;
+        font-size: 14px;
+        text-decoration: none;
+        color: #691616;
+        margin: 10px 30px;
+        padding: 1px;
+        position: relative;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    .navbar2 a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #691616;
+        transition: width 0.3s;
+    }
+
+    .navbar2 a:hover::before {
+        width: 100%;
+    }
+
+    /* Estilos para la imagen de fondo */
+    .encabezado-img {
+        position: relative;
+        background: linear-gradient(rgba(5, 7, 12, 0.719), rgba(5, 7, 12, 0.719)), url(img/fondo2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+        color: #ffffff;
+    }
+
+    .encabezado-img p {
+        font-size: 25px;
+    }
+
+    .encabezado-img h1 {
+        font-size: 70px;
+        padding: 28px 0;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .log-titulo {
+        font-size: 30px;
+    }
+
+    .titulo {
+        font-family: American Typewriter (serif);
+        color: #000;
+    }
+
+    .position {
+        position: absolute;
+        top: 143%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .encabezado-overlay {
+        width: 1000px;
+        height: 450px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 20 px #000;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        font-family: sans-serif;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        color: black;
+    }
+
+    .shape {
+        background-color: #691616;
+        height: 250px;
+        width: 450px;
+        margin-left: -20px;
+        position: relative;
+        top: -80px;
+        box-shadow: 0 2px 15px #000;
+        transform: rotate(25deg);
+
+    }
+
+    /* Estilos para el footer */
+    footer {
+        background-color: #691616;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .container-foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <header>
+        <!--PRIMER BARRA DE NAVEGACION-->
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <a href="#" class="log-titulo">Sweet Queen</a>
+            <a href="index.html">Inicio</a>
+            <a href="mision.html">Misión</a>
+            <a href="vision.html">Visión</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="webmaster.html">Web Master</a>
+        </nav>
+        <!--SEGUNDA BARRA DE NAVEGACION-->
+        <nav class="navbar2">
+            <a href="tbl_Sucursal.html">Tbl. Sucursal</a>
+            <a href="form_Sucursal.html">Form. Sucursal</a>
+            <a href="tbl_Empleado.html">Tbl. Empleado</a>
+            <a href="form_Empleado.html">Form. Empleado</a>
+            <a href="tbl_Cliente.html">Tbl. Cliente</a>
+            <a href="form_Cliente.html">Form. Cliente</a>
+            <a href="tbl_Pedido.html">Tbl. Pedido</a>
+            <a href="form_Pedido.html">Form. Pedido</a>
+            <a href="tbl_Apartado.html">Tbl. Apartado</a>
+            <a href="form_Apartado.html">F. Apartado</a>
+        </nav>
+        <div class="encabezado-img">
+            <div class="encabezado-overlay">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13579.70222342664!2d-106.41815164458006!3d31.690603000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75c507419878d%3A0xb1c192c253db8b9f!2sLa%20Pasteler%C3%ADa%20Jrz!5e0!3m2!1ses-419!2smx!4v1695744277014!5m2!1ses-419!2smx" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </header>
+    <footer>
+        <div class="container-foot">
+            <nav>
+                <p>&copy; 2023 Sweet Queen. Todos los derechos reservados.</p>
+                <a href="#">656-175-46-76</a>
+                <a href="#">Molina Villela Reyna Leticia 5-I</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
